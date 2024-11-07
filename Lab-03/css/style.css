@@ -1,0 +1,29 @@
+/* css of the wrapper container  */
+.wrapper {
+    position: fixed;    /* fixed position to make sure that the button does'nt move  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+/* here, all the css of the content (Hover Me) is written  */
+a {
+    border-radius: 7px;
+    display: block;
+    font-size: 24px;    /* size of the font is 24px */
+    font-family: sans-serif;
+    text-decoration: none;   /* to removed the underline  */
+    color: #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    border-left: 2px solid #333;
+    padding: 10px;         /* space inside the button between the content and the border */
+    letter-spacing: 2px;  /* some space between the letter when not hovered */
+    transition: all .25s;
+}
+
+/* when the button is hovered, then the space between the letters becomes 15px  */
+a:hover {
+    letter-spacing: 15px;
+}
